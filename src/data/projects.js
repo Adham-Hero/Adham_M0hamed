@@ -1,65 +1,116 @@
 // Add a new project by pushing a new object here — never create a new component.
 // `title` and `description` are bilingual objects; `technologies` and links
 // are language-independent so they're written once.
+
 const projects = [
   {
     id: 1,
     title: {
-      en: "VitalSense — Patient Vitals Dashboard",
-      ar: "VitalSense — لوحة متابعة العلامات الحيوية",
+      en: "Veloura — Hair Products E-Commerce Store",
+      ar: "Veloura — متجر منتجات العناية بالشعر",
     },
     description: {
-      en: "A concept dashboard that visualizes patient heart rate, blood pressure, and oxygen levels in real time, designed with nursing workflows in mind.",
-      ar: "لوحة تحكم مفاهيمية لعرض معدل ضربات القلب وضغط الدم ونسبة الأكسجين للمريض لحظيًا، مصممة مع مراعاة سير عمل التمريض.",
+      en: "A full-stack bilingual e-commerce platform for hair care products, featuring product management, authentication, shopping cart, checkout, orders, admin dashboard, Arabic/English support, and light/dark themes.",
+      ar: "متجر إلكتروني متكامل ثنائي اللغة لمنتجات العناية بالشعر، يحتوي على إدارة المنتجات، تسجيل الدخول، سلة المشتريات، إتمام الطلبات، لوحة تحكم للإدارة، دعم العربية والإنجليزية، والوضع الليلي والنهاري.",
     },
-    image: "/images/projects/vitalsense.jpg",
-    technologies: ["React", "Chart.js", "CSS3"],
-    github: "https://github.com/adham-mohamed/vitalsense",
-    demo: "https://vitalsense-demo.vercel.app",
+    image: "/images/projects/veloura.jpg",
+    technologies: [
+      "React",
+      "Vite",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Bootstrap",
+    ],
+    github: "",
+    demo: "https://veloura-ofah-pi.vercel.app/",
   },
+
   {
     id: 2,
     title: {
-      en: "SkyCast — Weather App",
-      ar: "SkyCast — تطبيق الطقس",
+      en: "Who is My Patient",
+      ar: "Who is My Patient — ملف المريض الطبي",
     },
     description: {
-      en: "A clean weather application that fetches live forecasts by city, with a responsive layout and smooth loading states.",
-      ar: "تطبيق طقس بسيط يجلب توقعات الطقس المباشرة حسب المدينة، بتصميم متجاوب وحالات تحميل سلسة.",
+      en: "A healthcare concept designed to help authorized medical staff quickly access important patient information such as medical history, previous surgeries, chronic diseases, age, and basic information using the patient's national ID.",
+      ar: "مشروع صحي يهدف إلى مساعدة الفريق الطبي المسؤول على الوصول بسرعة إلى المعلومات المهمة عن المريض مثل التاريخ المرضي، العمليات السابقة، الأمراض المزمنة، العمر والبيانات الأساسية باستخدام الرقم القومي للمريض.",
     },
-    image: "/images/projects/skycast.jpg",
-    technologies: ["JavaScript", "REST API", "HTML5", "CSS3"],
-    github: "https://github.com/adham-mohamed/skycast",
-    demo: "https://skycast-demo.vercel.app",
+    image: "/images/projects/who-is-my-patient.jpg",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Healthcare",
+      "Database",
+    ],
+    github: "",
+    demo: "https://lnkd.in/d2yWJ2X3",
   },
+
   {
     id: 3,
     title: {
-      en: "SymptomAI — Triage Assistant (Concept)",
-      ar: "SymptomAI — مساعد فرز الأعراض (مفهوم)",
+      en: "Free Time — Group Schedule Planner",
+      ar: "Free Time — محدد المواعيد المناسب للجميع",
     },
     description: {
-      en: "An exploratory AI-assisted tool that suggests urgency levels from reported symptoms, combining my interest in healthcare and AI.",
-      ar: "أداة استكشافية بمساعدة الذكاء الاصطناعي تقترح درجة الأولوية بناءً على الأعراض المُدخلة، تجمع بين اهتمامي بالرعاية الصحية والذكاء الاصطناعي.",
+      en: "A scheduling tool that helps groups quickly find suitable meeting times. Each person enters their unavailable hours, and the application determines the time slots when everyone is available.",
+      ar: "أداة لتنظيم المواعيد تساعد مجموعة من الأشخاص على إيجاد الموعد المناسب للجميع بسرعة. يقوم كل شخص بإدخال الأوقات التي يكون فيها مشغولًا، ثم يحدد الموقع المواعيد التي يكون فيها الجميع متاحين.",
     },
-    image: "/images/projects/symptomai.jpg",
-    technologies: ["Python", "React", "Node.js"],
-    github: "https://github.com/adham-mohamed/symptomai",
-    demo: "",
+    image: "/images/projects/free-time.jpg",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Responsive Design",
+    ],
+    github: "",
+    demo: "https://lnkd.in/dEE5RJGR",
   },
+
   {
     id: 4,
     title: {
-      en: "This Portfolio",
-      ar: "هذا الموقع الشخصي",
+      en: "What to Wear — Weather Outfit Assistant",
+      ar: "What to Wear — مساعد اختيار الملابس حسب الطقس",
     },
     description: {
-      en: "The bilingual, theme-aware portfolio you're looking at right now — built with React, Vite, and a custom Context-based design system.",
-      ar: "نفس الموقع الشخصي ثنائي اللغة الذي تتصفحه الآن — مبني باستخدام React و Vite ونظام تصميم مخصص بالـ Context API.",
+      en: "A simple weather-based application that recommends what to wear according to the temperature and changes the background and clothing suggestions based on the weather and selected gender.",
+      ar: "تطبيق بسيط يقترح الملابس المناسبة حسب درجة الحرارة، مع تغيير الخلفية واقتراحات الملابس بناءً على حالة الطقس والجنس المحدد.",
     },
-    image: "/images/projects/portfolio.jpg",
-    technologies: ["React", "Vite", "JavaScript", "CSS3"],
-    github: "https://github.com/adham-mohamed/portfolio",
+    image: "/images/projects/what-to-wear.jpg",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Weather API",
+    ],
+    github: "",
+    demo: "https://lnkd.in/dQh9ewr2",
+  },
+
+  {
+    id: 5,
+    title: {
+      en: "Nursing GPA Calculator — Cairo University",
+      ar: "Nursing GPA Calculator — حاسبة GPA لطلاب تمريض القاهرة",
+    },
+    description: {
+      en: "A GPA calculator built specifically for Cairo University Faculty of Nursing students. Students can select their courses, enter their grades, calculate total credit hours, and get their GPA and letter grade.",
+      ar: "حاسبة GPA مصممة خصيصًا لطلاب كلية التمريض بجامعة القاهرة. يستطيع الطالب اختيار المقررات التي درسها، إدخال درجاته، حساب إجمالي الساعات المعتمدة، والحصول على الـ GPA والتقدير بالحروف.",
+    },
+    image: "/images/projects/nursing-gpa.jpg",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap",
+      "Figma",
+    ],
+    github: "",
     demo: "",
   },
 ];
