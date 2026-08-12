@@ -1,0 +1,144 @@
+.about__inner {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+
+/* ---- Portrait ---- */
+.about__portrait {
+  position: relative;
+  flex: 0 0 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__portrait-frame {
+  position: relative;
+  z-index: 1;
+  width: 280px;
+  height: 340px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  padding: 0;
+}
+
+.about__portrait-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__portrait-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: var(--text-muted);
+  background: var(--gradient-radial);
+}
+
+.about__portrait-ring {
+  position: absolute;
+  inset-inline-start: -22px;
+  bottom: -22px;
+  width: 280px;
+  height: 340px;
+  border: 1px solid var(--teal);
+  border-radius: var(--radius-lg);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* ---- Content ---- */
+.about__content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.about__bio {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  max-width: 560px;
+  margin-bottom: 36px;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.about__info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px;
+}
+
+.about__info-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background: var(--surface-strong);
+  color: var(--teal);
+  font-size: 1.05rem;
+}
+
+.about__info-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.about__info-value {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 900px) {
+  .about__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__portrait {
+    flex-basis: auto;
+  }
+
+  .about__bio {
+    margin-inline: auto;
+  }
+
+  .about__info-card {
+    text-align: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__portrait-frame,
+  .about__portrait-ring {
+    width: 230px;
+    height: 280px;
+  }
+
+  .about__portrait-ring {
+    inset-inline-start: -14px;
+    bottom: -14px;
+  }
+}
