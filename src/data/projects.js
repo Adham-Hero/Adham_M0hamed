@@ -47,7 +47,7 @@ const projects = [
       "Database",
     ],
     github: "",
-    demo: "https://lnkd.in/d2yWJ2X3",
+    demo: "https://who-is-my-pateint.vercel.app/",
   },
 
   {
@@ -68,7 +68,7 @@ const projects = [
       "Responsive Design",
     ],
     github: "",
-    demo: "https://lnkd.in/dEE5RJGR",
+    demo: "https://adham-hero.github.io/free_time/",
   },
 
   {
@@ -89,7 +89,7 @@ const projects = [
       "Weather API",
     ],
     github: "",
-    demo: "https://lnkd.in/dQh9ewr2",
+    demo: "https://adham-hero.github.io/today-cloth/",
   },
 
   {
@@ -111,7 +111,7 @@ const projects = [
       "Figma",
     ],
     github: "",
-    demo: "",
+    demo: "https://adham-hero.github.io/Calc_Your_GPA/",
   },
 ];
 
