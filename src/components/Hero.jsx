@@ -9,22 +9,21 @@ function Hero() {
 
   return (
     <section id="home" className="hero">
-      {/* Decorative background: grid + gradient blobs (purely visual) */}
+      {/* Decorative background: a faint grid, no floating blobs */}
       <div className="hero__bg" aria-hidden="true">
         <div className="hero__grid" />
         <div className="hero__blob hero__blob--teal" />
-        <div className="hero__blob hero__blob--cyan" />
       </div>
 
       <div className="container hero__inner">
         {/* ---------- Text content ---------- */}
         <div className="hero__content">
           <div className="hero__badges">
-            <span className="hero__badge glass">
+            <span className="hero__badge surface">
               <span className="hero__badge-dot hero__badge-dot--code" />
               {t.hero.badgeCode}
             </span>
-            <span className="hero__badge glass">
+            <span className="hero__badge surface">
               <span className="hero__badge-dot hero__badge-dot--health" />
               {t.hero.badgeHealth}
             </span>
@@ -115,8 +114,7 @@ function Hero() {
             </div>
           </div>
 
-          {/* Floating tech chip — purely decorative accent */}
-          <div className="hero__chip glass hero__chip--float">
+          <div className="hero__chip surface">
             <span className="hero__chip-code">{"<React />"}</span>
           </div>
         </div>

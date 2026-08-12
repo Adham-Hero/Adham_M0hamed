@@ -20,7 +20,7 @@ function Skills() {
             return (
               <div
                 key={skill.name}
-                className="skills__card glass reveal"
+                className="skills__card surface reveal"
                 style={{ transitionDelay: `${(index % 5) * 70}ms` }}
               >
                 <span

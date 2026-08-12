@@ -18,10 +18,10 @@ function About() {
     <section id="about" className="section about">
       <div className="container about__inner">
         <div className="about__portrait reveal">
-          <div className="about__portrait-frame glass">
+          <div className="about__portrait-frame surface">
             {!imgFailed ? (
               <img
-                src="/images/about.jpg"
+                src="/images/profile.jpg"
                 alt="Adham Mohamed"
                 onError={() => setImgFailed(true)}
               />
@@ -41,7 +41,7 @@ function About() {
 
           <div className="about__grid">
             {infoRows.map((row, index) => (
-              <div className="about__info-card glass reveal" key={row.label} style={{ transitionDelay: `${index * 90}ms` }}>
+              <div className="about__info-card surface reveal" key={row.label} style={{ transitionDelay: `${index * 90}ms` }}>
                 <row.icon className="about__info-icon" />
                 <div>
                   <span className="about__info-label">{row.label}</span>

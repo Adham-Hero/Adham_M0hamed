@@ -54,6 +54,43 @@
   word-break: break-word;
 }
 
+.contact__elsewhere {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 6px;
+}
+
+.contact__elsewhere-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.contact__elsewhere-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact__elsewhere-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.contact__elsewhere-btn:hover {
+  color: var(--teal);
+  border-color: var(--teal);
+}
+
 /* ---- Form ---- */
 .contact__form {
   padding: 30px;

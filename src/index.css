@@ -191,7 +191,10 @@ h1, h2, h3, h4 {
   margin-bottom: 48px;
 }
 
-/* ---- Glassmorphism surface ---- */
+/* ---- Glassmorphism surface ----
+   Reserved for ONE signature moment (the Hero photo card). Using this
+   everywhere is what makes a page look like a generic AI template, so
+   every other card in the site uses the plain `.surface` below instead. */
 .glass {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -199,6 +202,16 @@ h1, h2, h3, h4 {
   -webkit-backdrop-filter: blur(18px);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
+}
+
+/* ---- Plain surface (default card treatment) ----
+   Solid background, hairline border, no blur, no glow. Used for the vast
+   majority of cards across the site so the page reads as designed, not
+   as "glassmorphism applied to everything." */
+.surface {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
 }
 
 /* ---- Buttons ---- */

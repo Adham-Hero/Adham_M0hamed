@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { FiMail, FiGithub, FiLinkedin, FiSend, FiCheckCircle } from "react-icons/fi";
+import {
+  FiMail,
+  FiGithub,
+  FiLinkedin,
+  FiInstagram,
+  FiFacebook,
+  FiSend,
+  FiCheckCircle,
+} from "react-icons/fi";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import socials from "../data/socials.js";
 import "./Contact.css";
@@ -31,6 +39,13 @@ function Contact() {
       value: socials.linkedin.replace("https://", ""),
       href: socials.linkedin,
     },
+  ];
+
+  // Lighter-weight, secondary channels — shown as small icon links rather
+  // than full cards so they don't compete with the primary ones above.
+  const elsewhereLinks = [
+    { icon: FiInstagram, href: socials.instagram, label: "Instagram" },
+    { icon: FiFacebook, href: socials.facebook, label: "Facebook" },
   ];
 
   const handleChange = (e) => {
@@ -69,7 +84,7 @@ function Contact() {
                 href={item.href}
                 target={item.href.startsWith("http") ? "_blank" : undefined}
                 rel="noopener noreferrer"
-                className="contact__info-card glass"
+                className="contact__info-card surface"
               >
                 <span className="contact__info-icon">
                   <item.icon />
@@ -80,10 +95,28 @@ function Contact() {
                 </span>
               </a>
             ))}
+
+            <div className="contact__elsewhere">
+              <span className="contact__elsewhere-label">{t.contact.elsewhereLabel}</span>
+              <div className="contact__elsewhere-links">
+                {elsewhereLinks.map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="contact__elsewhere-btn"
+                    aria-label={item.label}
+                  >
+                    <item.icon />
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* ---------- Form ---------- */}
-          <form className="contact__form glass reveal" onSubmit={handleSubmit} noValidate>
+          <form className="contact__form surface reveal" onSubmit={handleSubmit} noValidate>
             <div className="contact__field">
               <label htmlFor="name">{t.contact.formName}</label>
               <input

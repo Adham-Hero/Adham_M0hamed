@@ -18,7 +18,7 @@ function ProjectCard({ title, description, image, technologies = [], github, dem
   const [imgFailed, setImgFailed] = useState(false);
 
   return (
-    <article className="project-card glass">
+    <article className="project-card surface">
       <div className="project-card__image">
         {!imgFailed && image ? (
           <img src={image} alt={title} onError={() => setImgFailed(true)} />

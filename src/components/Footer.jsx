@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiInstagram, FiFacebook, FiMail } from "react-icons/fi";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import socials from "../data/socials.js";
 import "./Footer.css";
@@ -6,6 +6,8 @@ import "./Footer.css";
 const socialLinks = [
   { icon: FiGithub, href: socials.github, label: "GitHub" },
   { icon: FiLinkedin, href: socials.linkedin, label: "LinkedIn" },
+  { icon: FiInstagram, href: socials.instagram, label: "Instagram" },
+  { icon: FiFacebook, href: socials.facebook, label: "Facebook" },
   { icon: FiMail, href: `mailto:${socials.email}`, label: "Email" },
 ];
 
