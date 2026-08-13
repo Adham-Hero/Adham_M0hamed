@@ -47,7 +47,7 @@ const translations = {
       title: "Things I've built",
       subtitle:
         "A mix of web apps and interface experiments — each one a step in learning to ship real products.",
-      demo: "Live Demo",
+      demo: "View",
       code: "GitHub",
       comingSoon: "Coming Soon",
     },
