@@ -47,7 +47,7 @@ const translations = {
       title: "Things I've built",
       subtitle:
         "A mix of web apps and interface experiments — each one a step in learning to ship real products.",
-      demo: "View",
+      demo: "Open",
       code: "GitHub",
       comingSoon: "Coming Soon",
     },
@@ -119,7 +119,7 @@ const translations = {
       eyebrow: "المشاريع",
       title: "أشياء قمت ببنائها",
       subtitle: "مزيج من تطبيقات الويب وتجارب الواجهات — كل مشروع خطوة في تعلّم بناء منتجات حقيقية.",
-      demo: "معاينة مباشرة",
+      demo: "عرض",
       code: "GitHub",
       comingSoon: "قريبًا",
     },
