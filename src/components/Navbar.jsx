@@ -38,16 +38,6 @@ function Navbar() {
 
   const handleLinkClick = () => setIsMenuOpen(false);
 
-  // Lock background scrolling while the mobile drawer is open — without
-  // this, scrolling the page behind it feels like the menu is "closing"
-  // since the content underneath keeps moving.
-  useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isMenuOpen]);
-
   return (
     <header className={`navbar ${isScrolled ? "navbar--scrolled" : ""}`}>
       {isMenuOpen && (

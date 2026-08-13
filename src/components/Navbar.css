@@ -144,8 +144,6 @@
     position: fixed;
     inset: var(--nav-height) 0 0 0;
     background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
     z-index: 1;
     animation: fadeIn 0.25s ease;
   }
