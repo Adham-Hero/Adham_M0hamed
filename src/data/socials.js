@@ -4,10 +4,10 @@
 // slug — double check it matches your exact profile URL and adjust if not.
 const socials = {
   email: "adham612199@gmail.com",
-  linkedin: "https://www.linkedin.com/in/adham-mohamed",
-  instagram: "https://instagram.com/Adham-Hero",
-  facebook: "https://facebook.com/Adham-Hero",
-  github: "https://github.com/adham-hero",
+  linkedin: "https://www.linkedin.com/in/adham-mohamed-300317260/",
+  instagram: "hhttps://www.instagram.com/adham_m0hamed612/",
+  facebook: "https://www.facebook.com/adhm.mhmd.594072",
+  github: "https://github.com/Adham-Hero",
 };
 
 export default socials;
