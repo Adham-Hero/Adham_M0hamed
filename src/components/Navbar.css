@@ -7,17 +7,33 @@
   align-items: center;
   background: transparent;
   border-bottom: 1px solid transparent;
-  transition: background var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
-  overflow: hidden;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
 }
 
-.navbar--scrolled {
+/* The frosted-glass "scrolled" background lives on its own layer
+   (::before) rather than directly on .navbar. A backdrop-filter placed
+   directly on the header would turn the header into the positioning
+   context for its own fixed children (the mobile drawer + its backdrop),
+   trapping them inside the 76px header bar instead of the full screen —
+   which is exactly why the menu only used to open at the very top of
+   the page. Keeping the filter on a separate layer avoids that entirely. */
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
   background: var(--bg);
   background: color-mix(in srgb, var(--bg) 82%, transparent);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
   box-shadow: var(--shadow-soft);
+  transition: opacity var(--transition-base);
+}
+
+.navbar--scrolled::before {
+  opacity: 1;
 }
 
 .navbar__inner {
