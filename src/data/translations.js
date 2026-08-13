@@ -73,7 +73,6 @@ const translations = {
     },
     footer: {
       rights: "All Rights Reserved.",
-      builtWith: "Built with React & Vite.",
     },
   },
   ar: {
@@ -145,7 +144,6 @@ const translations = {
     },
     footer: {
       rights: "جميع الحقوق محفوظة.",
-      builtWith: "تم البناء باستخدام React و Vite.",
     },
   },
 };

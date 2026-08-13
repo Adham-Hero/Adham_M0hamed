@@ -97,8 +97,34 @@ body {
   overflow-x: hidden;
 }
 
+/* Arabic uses a font stack close to iOS's system Arabic (SF Arabic):
+   real Apple devices get San Francisco Arabic natively via -apple-system,
+   everyone else gets IBM Plex Sans Arabic — a clean, modern equivalent. */
 html[dir="rtl"] body {
-  font-family: "Inter", "Tahoma", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "IBM Plex Sans Arabic",
+    "Segoe UI", Tahoma, sans-serif;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "IBM Plex Sans Arabic",
+    "Segoe UI", Tahoma, sans-serif;
+  font-weight: 700;
+}
+
+/* A few accents use the monospace "code" font for a technical feel —
+   that font has no Arabic glyphs, so swap those specific labels back to
+   the Arabic-friendly stack whenever the page is in Arabic. */
+html[dir="rtl"] .section-eyebrow,
+html[dir="rtl"] .hero__badge,
+html[dir="rtl"] .hero__scroll-hint,
+html[dir="rtl"] .hero__role,
+html[dir="rtl"] .skills__level,
+html[dir="rtl"] .contact__elsewhere-label {
+  font-family: -apple-system, BlinkMacSystemFont, "IBM Plex Sans Arabic",
+    "Segoe UI", Tahoma, sans-serif;
 }
 
 img {

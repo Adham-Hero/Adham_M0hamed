@@ -9,8 +9,8 @@ import "./Navbar.css";
 const NAV_LINKS = [
   { key: "home", id: "home" },
   { key: "about", id: "about" },
-  { key: "projects", id: "projects" },
   { key: "skills", id: "skills" },
+  { key: "projects", id: "projects" },
   { key: "contact", id: "contact" },
 ];
 

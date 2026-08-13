@@ -16,12 +16,6 @@
   color: var(--text-secondary);
 }
 
-.footer__built {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-muted);
-}
-
 .footer__social {
   display: flex;
   align-items: center;

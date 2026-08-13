@@ -36,8 +36,6 @@ function Footer() {
             </a>
           ))}
         </div>
-
-        <p className="footer__built">{t.footer.builtWith}</p>
       </div>
     </footer>
   );
