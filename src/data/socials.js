@@ -5,7 +5,7 @@
 const socials = {
   email: "adham612199@gmail.com",
   linkedin: "https://www.linkedin.com/in/adham-mohamed-300317260/",
-  instagram: "hhttps://www.instagram.com/adham_m0hamed612/",
+  instagram: "https://www.instagram.com/adham_m0hamed612/",
   facebook: "https://www.facebook.com/adhm.mhmd.594072",
   github: "https://github.com/Adham-Hero",
 };
